@@ -1,3 +1,4 @@
 module.exports = {
-    MONGO_URI: ''
+    MONGO_URI: '',
+    JWT: '',
 };
