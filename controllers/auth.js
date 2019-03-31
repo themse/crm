@@ -2,6 +2,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const credentials = require('../config/credentials');
+const errorHandler = require('../utils/errorHandler');
 const User = require('../models/User');
 
 module.exports.login = async (request, response) => {
@@ -48,6 +49,6 @@ module.exports.registry = async (request, response) => {
         await user.save();
         response.status(201). json(user);
     } catch (error) {
-        // TODO: handle error
+        errorHandler(response, error);
     }
 };
