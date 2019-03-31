@@ -2,12 +2,13 @@
   "name": "crm",
   "version": "1.0.0",
   "description": "fullstack app",
-  "main": "index.js",
+  "main": "src/backend/index.js",
   "scripts": {
     "start": "node index",
-    "server": "nodemon index"
+    "serve": "nodemon --watch src src/backend/index"
   },
   "keywords": [
+    "node",
     "express",
     "react"
   ],
