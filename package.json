@@ -4,7 +4,7 @@
   "description": "fullstack app",
   "main": "src/backend/index.js",
   "scripts": {
-    "start": "node index",
+    "start": "node src/backend/index",
     "serve": "nodemon --watch src src/backend/index"
   },
   "keywords": [
@@ -20,8 +20,10 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
     "mongoose": "^5.4.20",
     "morgan": "^1.9.1",
+    "multer": "^1.4.1",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0"
   },
